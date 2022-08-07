@@ -1,0 +1,214 @@
+/* Thin 200  */
+
+@font-face {
+  font-family: "AvenirDemi";
+  src: url("../assets/fonts/avenir_next_lt_pro_demi.ttf");
+}
+
+.formAndProgressBar {
+  display: grid;
+  grid-template-columns: 2% 98%;
+  height: auto;
+}
+
+.progressBar {
+  border-left: #baeafa solid 5px;
+  padding-top: 15px;
+  height: 90%;
+  width: 25px;
+  position: relative;
+  top: 9%;
+  left: 16vw;
+  display: flex;
+  flex-direction: column;
+}
+
+.circle1 {
+  position: relative;
+  top: -2%;
+  left: -0.85vw;
+}
+
+.circle2 {
+  position: relative;
+  top: 4%;
+  left: -0.85vw;
+}
+
+.circle3 {
+  position: relative;
+  top: 15%;
+  left: -0.85vw;
+}
+
+.circle4 {
+  position: relative;
+  top: 27.5%;
+  left: -0.85vw;
+}
+
+.circle5 {
+  position: relative;
+  top: 40.5%;
+  left: -0.85vw;
+}
+
+.circle6 {
+  position: relative;
+  top: 46.5%;
+  left: -0.85vw;
+}
+
+.circle7 {
+  position: relative;
+  top: 52%;
+  left: -0.85vw;
+}
+
+.circle8 {
+  position: relative;
+  top: 58%;
+  left: -0.85vw;
+}
+.circle9 {
+  position: relative;
+  top: 64%;
+  left: -0.85vw;
+}
+
+.circle10 {
+  position: relative;
+  top: 74.9%;
+  left: -0.85vw;
+}
+
+.label {
+  width: 40px;
+}
+
+.header2 {
+  color: #baeafa;
+}
+
+.header2 h4 {
+  font-size: 26px;
+}
+
+.header2 h2 {
+  font-size: 44px;
+}
+
+.header2 p {
+  font-size: 20px;
+  margin-top: 20px;
+  width: 80%;
+  text-align: center;
+}
+
+.formGroup {
+  display: grid;
+  grid-template-columns: 18% 16% 55%;
+  margin: 20px 20px 0px 20px;
+  align-items: center;
+  width: 85%;
+  height: auto;
+}
+
+.formGroup2 {
+  width: 85%;
+}
+
+.formGroup label {
+  text-align: right;
+  width: 100%;
+  margin-left: -20px;
+}
+
+.formGroup input {
+  height: 50px;
+  width: 100%;
+  border-radius: 300px;
+  border: none;
+  background-color: #ffffff;
+  padding-left: 20px;
+  color: black;
+}
+
+.formGroup input {
+  height: 50px;
+  width: 100%;
+  border-radius: 300px;
+  border: none;
+  background-color: #ffffff;
+  padding-left: 20px;
+  color: black;
+}
+
+.formGroup input::placeholder {
+  font-size: 20px;
+}
+
+.icon {
+  display: flex;
+  width: 100%;
+}
+
+.iconInd {
+  position: relative;
+  top: 12px;
+  right: 24px;
+}
+
+.formContainer {
+  margin-top: 50px;
+}
+
+.inputGrid {
+  width: 99%;
+  display: grid;
+  grid-template-columns: 26% 46% 29%;
+  grid-column-gap: 1%;
+}
+
+.inputGrid2 {
+  width: 98%;
+  display: grid;
+  grid-template-columns: 29% 15% 39% 18%;
+  align-items: center;
+  grid-column-gap: 1%;
+}
+
+.inputGrid3 {
+  width: 98%;
+  display: grid;
+  grid-template-columns: 33% 33% 33%;
+  align-items: center;
+  grid-column-gap: 1%;
+}
+
+#pTag {
+  margin-left: 15px;
+}
+
+.inputGrid4 {
+  width: 98%;
+  display: grid;
+  grid-template-columns: 20% 80% 20% 20%;
+  align-items: center;
+  grid-column-gap: 1%;
+}
+
+.inputGrid5 {
+  width: 81%;
+  display: grid;
+  grid-template-columns: 33% 69% 20% 24%;
+  align-items: center;
+  grid-column-gap: 1%;
+}
+
+.country {
+  width: 100%;
+  height: 168px;
+  background-color: #ffffff;
+  border-radius: 25px;
+}
