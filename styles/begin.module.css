@@ -617,8 +617,11 @@
 
   .inputGrid5 {
     display: grid;
-    grid-template-rows: 50px 50px;
-    grid-template-columns: 50% 50%;
+    /* grid-template-rows: 50px 50px;
+    grid-template-columns: 50% 50%; */
+    padding: 0px;
+    grid-template-columns: 45% 45% 30%;
+    grid-auto-rows: 50px;
   }
 
   .inputGrid4 {
@@ -627,9 +630,8 @@
   }
 
   .inputGrid2 {
-    grid-template-areas:
-      "Pdomaim Pdomain Pdomain"
-      "www domain com";
+    grid-template-columns: 1.5fr 1fr 1.5fr 1fr;
+    grid-auto-rows: 50px;
   }
 
   .bottomNav {
