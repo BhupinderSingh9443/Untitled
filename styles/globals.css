@@ -88,7 +88,7 @@ a {
 }
 
 .margin-left {
-  margin-left: -8px;
+  margin-left: 0px;
 }
 
 @media screen and (max-width: 426px) {
@@ -108,8 +108,14 @@ a {
   }
 
   .margin-left {
-    margin-left: 0px;
+    margin-left: 5px;
     margin-top: -5px;
+  }
+
+  .begin-form-container {
+    background: url("../assets/images/Mask\ Group\ 9.png");
+    background-position: center;
+    background-size: cover;
   }
 }
 

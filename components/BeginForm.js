@@ -200,8 +200,9 @@ const BeginForm = () => {
           </div>
         </div>
       </div>
-      <div className={styles.dcol2}>
-        <div className={styles.bottomNav}>
+
+      <div className={styles.navBottomContainer}>
+        <div className={styles.navBottom}>
           <div className={styles.dCol}>
             <h4>CrossK on Mobile</h4>
             <div>
@@ -217,7 +218,7 @@ const BeginForm = () => {
             <a>Contact us</a>
             <a>FAQ</a>
           </div>
-          <div className={styles.dCol}>
+          <div className={`${styles.dCol} ${styles.marginL}`}>
             <h4>Legal</h4>
             <a>Terms & conditions</a>
             <a>Privacy Policy</a>
@@ -237,7 +238,9 @@ const BeginForm = () => {
             </div>
           </div>
         </div>
-        <div className={styles.line}></div>
+        <div className={styles.copyright}>
+          <p>Copyright @ CrossK 2020</p>
+        </div>
       </div>
     </div>
   );
