@@ -6,6 +6,12 @@ import opendropdown from "/assets/icons/open-dropdown.svg";
 import closedropdown from "../assets/icons/close-dropdown.svg";
 import progBig from "../assets/icons/progressMarkBig.png";
 import progSmall from "../assets/icons/progressMarkSmall.png";
+import playStore from "../assets/icons/googlePlay.png";
+import AppStore from "../assets/icons/AppStore.png";
+import linkedin from "../assets/icons/linkedin.png";
+import twitter from "../assets/icons/twitter.png";
+import facebook from "../assets/icons/facebook-1.png";
+import Dropdown2 from "./dropdown/dropdown2";
 
 const BeginForm = () => {
   return (
@@ -24,44 +30,44 @@ const BeginForm = () => {
       <div className={`${styles.formAndProgressBar}`}>
         <div className={`${styles.progressBar}`}>
           <div className={`${styles.circle1}`}>
-            <Image src={progBig} height="20" width="20" />
+            <img src="/icons/progressMarkBig.png" alt="Progress" />
           </div>
           <div className={`${styles.circle2}`}>
-            <Image src={progSmall} height="15" width="15" />
+            <img src="/icons/progressMarkSmall.png" alt="Progress" />
           </div>
           <div className={`${styles.circle3}`}>
-            <Image src={progBig} height="15" width="15" />
+            <img src="/icons/progressMarkSmall.png" alt="Progress" />
           </div>
           <div className={`${styles.circle4}`}>
-            <Image src={progSmall} height="15" width="15" />
+            <img src="/icons/progressMarkSmall.png" alt="Progress" />
           </div>
           <div className={`${styles.circle5}`}>
-            <Image src={progBig} height="15" width="15" />
+            <img src="/icons/progressMarkSmall.png" alt="Progress" />
           </div>
           <div className={`${styles.circle6}`}>
-            <Image src={progSmall} height="15" width="15" />
+            <img src="/icons/progressMarkSmall.png" alt="Progress" />
           </div>
           <div className={`${styles.circle7}`}>
-            <Image src={progBig} height="15" width="15" />
+            <img src="/icons/progressMarkSmall.png" alt="Progress" />
           </div>
           <div className={`${styles.circle8}`}>
-            <Image src={progSmall} height="15" width="15" />
+            <img src="/icons/progressMarkSmall.png" alt="Progress" />
           </div>
           <div className={`${styles.circle9}`}>
-            <Image src={progBig} height="15" width="15" />
+            <img src="/icons/progressMarkSmall.png" alt="Progress" />
           </div>
           <div className={`${styles.circle10}`}>
-            <Image src={progSmall} height="15" width="15" />
+            <img src="/icons/progressMarkBig.png" alt="Progress" />
           </div>
         </div>
         <div className={`${styles.formContainer}`}>
           <div className={`${styles.formGroup}`}>
-            <p>Company-Info</p>
+            <p className={styles.companyInfo}>Company-Info</p>
             <label>Company Name:</label>
             <input placeholder="ABC Pvt. Ltd." />
           </div>
           <div className={`${styles.formGroup}`}>
-            <p>Company-Info</p>
+            <p></p>
             <label>Company Domain:</label>
             <div className={`${styles.inputGrid}`}>
               <input placeholder="www" />
@@ -77,7 +83,7 @@ const BeginForm = () => {
           <div className={`${styles.formGroup}`}>
             <p></p>
             <label></label>
-            <p id={`${styles.pTag}`}>
+            <p className={`${styles.pTag}`}>
               If you have any further Domain, Please fill below detail
             </p>
           </div>
@@ -86,29 +92,58 @@ const BeginForm = () => {
             <label></label>
             <div className={`${styles.inputGrid2}`}>
               <div className={`${styles.icon}`}>
-                <input placeholder="Parent Domain"></input>
+                <input
+                  className={styles["i-2-g-1"]}
+                  placeholder="Parent Domain"
+                ></input>
                 <div className={`${styles.iconInd}`}>
                   <Image src={opendropdown} width="10" height="10" />
                 </div>
               </div>
-              <input placeholder="www" />
-              <input placeholder="abc" />
+              <input className={styles["i-2-g-2"]} placeholder="www" />
+              <input className={styles["i-2-g-3"]} placeholder="abc" />
               <div className={`${styles.icon}`}>
-                <input placeholder=".com" />
+                <input className={styles["i-2-g-4"]} placeholder=".com" />
                 <div className={`${styles.iconInd}`}>
                   <Image src={opendropdown} width="10" height="10" />
                 </div>
               </div>
+
+              {/* <div className={styles.drpdn}>
+                <Dropdown2 />
+              </div> */}
             </div>
           </div>
           <div className={`${styles.formGroup}`}>
-            <p>Country </p>
+            <p> </p>
             <label>Country:</label>
-            <div className={`${styles.country}`} />
+            <div className={`${styles.country}`}>
+              <div className={styles.selectAllAndCheckBox}>
+                <p className={styles.selectAll}>Select All</p>
+                <input type="checkbox"></input>
+              </div>
+              {[
+                { label: "Country Name", value: "India" },
+                { label: "Country Name", value: "US" },
+                { label: "Country Name", value: "UK" },
+                { label: "Country Name", value: "Pakistan" },
+                { label: "Country Name", value: "India" },
+                { label: "Country Name", value: "US" },
+                { label: "Country Name ", value: "UK" },
+                { label: "Country Name", value: "Pakistan" },
+              ].map((country) => (
+                <div className={styles.countrySelect}>
+                  <div className={styles.countryName}>
+                    <p>{country.label}</p>
+                    <input className={styles.checkBox} type="checkbox"></input>
+                  </div>
+                </div>
+              ))}
+            </div>
           </div>
 
           <div className={`${styles.formGroup}`}>
-            <p>Name</p>
+            <p></p>
             <label>Name:</label>
             <div className={`${styles.inputGrid3}`}>
               <input placeholder="First Name" />
@@ -118,7 +153,7 @@ const BeginForm = () => {
           </div>
 
           <div className={`${styles.formGroup}`}>
-            <p>Name</p>
+            <p></p>
             <label>Email Address:</label>
             <div className={`${styles.inputGrid5}`}>
               <input placeholder="Username" />
@@ -134,7 +169,7 @@ const BeginForm = () => {
           </div>
 
           <div className={`${styles.formGroup} ${styles.formGroup2}`}>
-            <p>Name</p>
+            <p></p>
             <label>Phone Number:</label>
             <div className={`${styles.inputGrid4}`}>
               <div className={`${styles.icon}`}>
@@ -149,12 +184,12 @@ const BeginForm = () => {
             </div>
           </div>
           <div className={`${styles.formGroup}`}>
-            <p>Password</p>
+            <p></p>
             <label>Password</label>
             <input placeholder="Enter your password" />
           </div>
           <div className={`${styles.formGroup}`}>
-            <p>Password</p>
+            <p></p>
             <label>Confirm-password:</label>
             <input placeholder="Re-enter your pasword" />
           </div>
@@ -164,6 +199,45 @@ const BeginForm = () => {
             </button>
           </div>
         </div>
+      </div>
+      <div className={styles.dcol2}>
+        <div className={styles.bottomNav}>
+          <div className={styles.dCol}>
+            <h4>CrossK on Mobile</h4>
+            <div>
+              <Image src={playStore} />
+            </div>
+            <div>
+              <Image src={AppStore} />
+            </div>
+          </div>
+          <div className={styles.dCol}>
+            <h4>Company</h4>
+            <a>About us</a>
+            <a>Contact us</a>
+            <a>FAQ</a>
+          </div>
+          <div className={styles.dCol}>
+            <h4>Legal</h4>
+            <a>Terms & conditions</a>
+            <a>Privacy Policy</a>
+          </div>
+          <div className={styles.dCol}>
+            <h4>Follow us</h4>
+            <div className={styles.dRow}>
+              <div className={styles.social}>
+                <Image src={facebook} />
+              </div>
+              <div className={styles.social}>
+                <Image src={twitter} />
+              </div>
+              <div className={styles.social}>
+                <Image src={linkedin} />
+              </div>
+            </div>
+          </div>
+        </div>
+        <div className={styles.line}></div>
       </div>
     </div>
   );

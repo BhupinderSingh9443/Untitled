@@ -5,13 +5,33 @@
   src: url("../assets/fonts/avenir_next_lt_pro_demi.ttf");
 }
 
+@font-face {
+  font-family: "AvenirLight";
+  src: url("../assets/fonts/AvenirLTProLight.otf");
+}
+
+@font-face {
+  font-family: "AvenirMedium";
+  src: url("../assets/fonts/AvenirLTProMedium.otf");
+}
+
+@font-face {
+  font-family: "AvenirBold";
+  src: url("../assets/fonts/AvenirLTProHeavyOblique.otf");
+}
+
+@font-face {
+  font-family: "AvenirMedium";
+  src: url("../assets/fonts/AvenirLTProMedium.otf");
+}
+
 .formAndProgressBar {
   display: grid;
   grid-template-columns: 2% 98%;
-  height: auto;
+  height: 890;
 }
 
-.progressBar {
+/* .progressBar {
   border-left: #baeafa solid 5px;
   padding-top: 15px;
   height: 90%;
@@ -21,65 +41,72 @@
   left: 16vw;
   display: flex;
   flex-direction: column;
+} */
+
+.progressBar {
+  background-color: #baeafa;
+  overflow: visible;
+  padding-top: 15px;
+  height: 90%;
+  width: 3px;
+  position: relative;
+  top: 9%;
+  left: 16vw;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 }
 
 .circle1 {
+  width: auto;
+  height: auto;
   position: relative;
-  top: -2%;
-  left: -0.85vw;
+  top: -20px;
+  align-items: center;
 }
 
 .circle2 {
   position: relative;
-  top: 4%;
-  left: -0.85vw;
+  top: 25px;
 }
 
 .circle3 {
   position: relative;
-  top: 15%;
-  left: -0.85vw;
+  top: 110px;
 }
 
 .circle4 {
   position: relative;
-  top: 27.5%;
-  left: -0.85vw;
+  top: 220px;
 }
 
 .circle5 {
   position: relative;
-  top: 40.5%;
-  left: -0.85vw;
+  top: 330px;
 }
 
 .circle6 {
   position: relative;
-  top: 46.5%;
-  left: -0.85vw;
+  top: 380px;
 }
 
 .circle7 {
   position: relative;
-  top: 52%;
-  left: -0.85vw;
+  top: 428px;
 }
 
 .circle8 {
   position: relative;
-  top: 58%;
-  left: -0.85vw;
+  top: 480px;
 }
 .circle9 {
   position: relative;
-  top: 64%;
-  left: -0.85vw;
+  top: 528px;
 }
 
 .circle10 {
   position: relative;
-  top: 74.9%;
-  left: -0.85vw;
+  top: 620px;
 }
 
 .label {
@@ -87,15 +114,36 @@
 }
 
 .header2 {
+  /* font-family: "AvenirDemi"; */
   color: #baeafa;
+  /* font-weight: 100; */
+}
+
+.i-1-g-1 {
+  grid-area: Pdomain;
+}
+
+.i-1-g-2 {
+  grid-area: www;
+}
+
+.i-1-g-3 {
+  grid-area: domain;
+}
+
+.i-1-g-4 {
+  grid-area: com;
 }
 
 .header2 h4 {
   font-size: 26px;
+  font-family: "AvenirLight";
+  font-weight: 100;
 }
 
 .header2 h2 {
   font-size: 44px;
+  font-family: "AvenirLight";
 }
 
 .header2 p {
@@ -103,11 +151,12 @@
   margin-top: 20px;
   width: 80%;
   text-align: center;
+  color: #e2e2e2;
 }
 
 .formGroup {
   display: grid;
-  grid-template-columns: 18% 16% 55%;
+  grid-template-columns: 19% 16% 55%;
   margin: 20px 20px 0px 20px;
   align-items: center;
   width: 85%;
@@ -121,18 +170,20 @@
 .formGroup label {
   text-align: right;
   width: 100%;
-  margin-left: -20px;
+  margin-left: -15px;
+  font-family: AvenirLight;
+  font-weight: 300;
 }
-
+/* 
 .formGroup input {
   height: 50px;
   width: 100%;
   border-radius: 300px;
   border: none;
   background-color: #ffffff;
-  padding-left: 20px;
+  padding-left: 15px;
   color: black;
-}
+} */
 
 .formGroup input {
   height: 50px;
@@ -140,12 +191,14 @@
   border-radius: 300px;
   border: none;
   background-color: #ffffff;
-  padding-left: 20px;
+  padding-left: 15px;
+  padding-top: 5px;
   color: black;
 }
 
 .formGroup input::placeholder {
-  font-size: 20px;
+  font-size: 18px;
+  font-family: AvenirLight;
 }
 
 .icon {
@@ -211,4 +264,357 @@
   height: 168px;
   background-color: #ffffff;
   border-radius: 25px;
+  padding: 20px;
+  overflow-y: scroll;
+  display: flex;
+  flex-direction: column;
+}
+
+.countryName {
+  width: 90%;
+  color: black;
+  display: flex;
+  justify-content: space-between;
+}
+
+.selectAll {
+  color: black;
+}
+
+.selectAllAndCheckBox {
+  display: flex;
+  width: 90%;
+  justify-content: space-between;
+}
+
+.selectAllAndCheckBox input {
+  width: 20px;
+  height: 20px;
+  background-color: #ffffff;
+  margin-bottom: 10px;
+}
+
+.countrySelect input {
+  width: 20px;
+  height: 20px;
+  background-color: #ffffff;
+  margin-bottom: 10px;
+}
+
+.countrySelect p {
+  color: #848484;
+}
+
+.drpdnn .dr1 {
+  display: none;
+}
+
+.bottomNav {
+  background-color: #171717;
+  display: grid;
+  grid-template-columns: 20% 20% 20% 20%;
+  grid-gap: 100px;
+  padding: 50px 150px 150px 150px;
+  margin-top: 100px;
+  color: #ced6dc;
+}
+
+.bottomNav h4 {
+  margin-bottom: 30px;
+}
+
+.bottomNav a {
+  margin-bottom: 10px;
+}
+
+.dRow {
+  display: flex;
+}
+
+.dCol {
+  display: flex;
+  flex-direction: column;
+  width: 200px;
+}
+
+.dCo2 {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+}
+
+.social {
+  margin-right: 10px;
+}
+
+.line {
+  border-bottom: 1px grey solid;
+  width: 80%;
+  position: relative;
+  top: -80px;
+  left: 9%;
+}
+
+.rw-widget-input {
+  border-radius: 100px !important;
+}
+
+.drpdn * {
+  border-radius: 125px;
+}
+
+@media screen and (max-width: 769px) and (min-width: 427px) {
+  .formGroup {
+    width: 105%;
+  }
+
+  .fornGroup label {
+    margin-left: -19px;
+  }
+
+  .formGroup input::placeholder {
+    font-size: 15px;
+  }
+
+  .progressBar {
+    top: 10%;
+    left: 20vw;
+    height: 82%;
+  }
+
+  .circle1 {
+    position: relative;
+    top: -3%;
+  }
+
+  .circle2 {
+    position: relative;
+    top: 58%;
+  }
+
+  .circle3 {
+    position: relative;
+    top: -1%;
+  }
+
+  .circle4 {
+    position: relative;
+    top: 10.5%;
+  }
+
+  .circle5 {
+    position: relative;
+    top: 25%;
+  }
+
+  .circle6 {
+    position: relative;
+    top: 38.5%;
+  }
+
+  .circle7 {
+    position: relative;
+    top: 54%;
+  }
+
+  .circle8 {
+    position: relative;
+    top: 60%;
+  }
+  .circle9 {
+    position: relative;
+    top: 66%;
+  }
+
+  .circle10 {
+    position: relative;
+    top: 73.9%;
+  }
+
+  .btn-primary .medium {
+    margin-left: 100px;
+  }
+
+  .iconInd {
+    display: none;
+  }
+
+  .formGroup {
+    margin: 19px 20px 0px 17px;
+  }
+}
+
+@media screen and (max-width: 426px) {
+  .header2 h2 {
+    font-size: 28px;
+    margin-top: 10px;
+  }
+
+  .countrySelect p {
+    font-size: 12px;
+  }
+
+  .countrySelect input {
+    margin-bottom: 0px;
+    height: 15px;
+  }
+
+  .country {
+    padding: 15px;
+  }
+
+  .header2 p {
+    font-size: 15px;
+  }
+
+  .formGroup {
+    margin: 20px 0px 0px 0px;
+    width: 100%;
+  }
+
+  .formGroup input {
+    height: 30px;
+    padding-top: 0px;
+    padding-left: 10px;
+    margin-bottom: 5px;
+  }
+
+  .formGroup .country input {
+    height: 15px;
+    padding-top: 0px;
+    padding-left: 10px;
+    margin-bottom: 5px;
+  }
+
+  .formGroup input::placeholder {
+    font-size: 12px;
+  }
+
+  /* .inputGrid2 {
+    display: flex;
+  } */
+
+  .country {
+    font-size: 12px;
+    height: 100px;
+  }
+
+  .pTag {
+    font-size: 12px;
+  }
+
+  .formGroup label {
+    font-size: 12px;
+  }
+
+  .bottomNav {
+    display: grid;
+    grid-template-rows: 70px 70px;
+    grid-template-columns: 35% 35%;
+    padding: 10px;
+  }
+
+  .bottomNav .dCol {
+    display: flex;
+    flex-wrap: wrap;
+  }
+
+  .progressBar {
+    top: 11%;
+    left: 11vw;
+    height: 87%;
+  }
+
+  .companyInfo {
+    opacity: 0;
+  }
+
+  .circle1 {
+    position: relative;
+    top: -5%;
+  }
+
+  .circle2 {
+    position: relative;
+    top: 1%;
+  }
+
+  .circle3 {
+    position: relative;
+    top: 12%;
+  }
+
+  .circle4 {
+    position: relative;
+    top: 20.5%;
+  }
+
+  .circle5 {
+    position: relative;
+    top: 29%;
+  }
+
+  .circle6 {
+    position: relative;
+    top: 38.5%;
+  }
+
+  .circle7 {
+    position: relative;
+    top: 51%;
+  }
+
+  .circle8 {
+    position: relative;
+    top: 60%;
+  }
+  .circle9 {
+    position: relative;
+    top: 72%;
+  }
+
+  .circle10 {
+    position: relative;
+    top: 72.9%;
+  }
+
+  .iconInd {
+    display: none;
+  }
+
+  .inputGrid5 {
+    display: grid;
+    grid-template-rows: 50px 50px;
+    grid-template-columns: 50% 50%;
+  }
+
+  .inputGrid4 {
+    grid-template-rows: 50px 50px;
+    grid-template-columns: 50% 50%;
+  }
+
+  .inputGrid2 {
+    grid-template-areas:
+      "Pdomaim Pdomain Pdomain"
+      "www domain com";
+  }
+
+  .bottomNav {
+    grid-template-rows: 158px 199px;
+    grid-template-columns: 23% 48%;
+    margin: 0 auto;
+    padding-top: 30px;
+    padding-left: 34px;
+    font-size: 16px;
+  }
+
+  .header2 h4 {
+    font-size: 24px;
+  }
+
+  .margin-left {
+    margin-left: 8px;
+  }
 }
