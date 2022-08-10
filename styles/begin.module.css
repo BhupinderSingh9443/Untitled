@@ -38,10 +38,6 @@
   align-self: center;
 }
 
-.dCol h4 {
-  font-size: 16px;
-}
-
 .navBottomContainer {
   width: 100%;
   background-color: #282828;
@@ -386,6 +382,13 @@
   border-radius: 125px;
 }
 
+.dCol h4,
+.dCol a {
+  font-size: 16px;
+  padding-bottom: 10px;
+  margin-left: 10px;
+}
+
 @media screen and (max-width: 769px) and (min-width: 427px) {
   .navBottomContainer {
     width: 120%;
@@ -579,7 +582,7 @@
 
   .circle4 {
     position: relative;
-    top: 19.5%;
+    top: 20.5%;
   }
 
   .circle5 {
@@ -599,16 +602,16 @@
 
   .circle8 {
     position: relative;
-    top: 59%;
+    top: 60%;
   }
   .circle9 {
     position: relative;
-    top: 63%;
+    top: 65%;
   }
 
   .circle10 {
     position: relative;
-    top: 69.9%;
+    top: 70.9%;
   }
 
   .iconInd {
